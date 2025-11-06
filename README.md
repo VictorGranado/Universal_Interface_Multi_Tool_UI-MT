@@ -45,19 +45,266 @@ UI/MT acts as a **scanner, analyzer, configurator, and signal generator**, allow
 ---
 
 ## 💡 Extended Utilities (Other Functions)
+---
 
-| Utility                     | Purpose                                                                                            |
-| --------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Real-Time Clock**         | Always-visible clock overlay synced via Wi-Fi (NTP) or RTC fallback.                               |
-| **Electrical Calculator**   | Ohm’s law, power, voltage divider, RC constant, reactance calculators, and resistor color decoder. |
-| **Unit & Base Converters**  | Decimal ↔ hex ↔ binary, dB ↔ linear, frequency ↔ period, etc.                                      |
-| **Reference Guides**        | Quick primers for UART, I²C, SPI, BLE, Wi-Fi, IR, and PCB basics.                                  |
-| **Cheat-Sheets**            | Common baud rates, resistor codes, logic levels, connector pinouts.                                |
-| **Tone Generator**          | Simple DAC/PWM audio tone generator for quick sound or speaker tests.                              |
-| **File Manager**            | Browse, view, export, and delete logs and presets from the SD card.                                |
-| **Network Tools (Passive)** | Show IP info, ping, DNS lookup, and network diagnostics.                                           |
-| **Macro Templates**         | Prebuilt safe command macros for UART/I²C/IR actions.                                              |
-| **Tutorials & Help**        | Interactive guides and safety/legal information.                                                   |
+## 🔧 10. Other Functions
+
+*Utility and educational tools that complement the main engineering features — designed for convenience, quick reference, and learning.*
+
+The **Other Functions** tab acts as your “utility bay” — accessible from the mode carousel or radial menu. It contains a series of lightweight, instantly available tools that make UI/MT a complete pocket companion for lab work, debugging, and learning.
+
+Each utility launches in its own **touch-friendly tile interface**, with consistent navigation:
+
+* Swipe left/right → change utility
+* Tap “Home” icon → return to HUD
+* Tap top-right clock → view Time Settings
+
+---
+
+### 🕒 1. Real-Time Clock & Status
+
+**Purpose:** Provide accurate timekeeping and synchronization for logs, timestamps, and user convenience.
+
+**Features:**
+
+* Always-visible digital clock overlay (top-right, every screen)
+* Syncs with NTP over Wi-Fi; automatic RTC update (DS3231)
+* Manual time/date set option
+* 12/24-hour toggle
+* Last-sync indicator (green dot = synced)
+* Stored timezone offset
+* Backup power monitoring for RTC
+
+**Interface:**
+
+```
+[15:42:19]  UTC-7  |  Source: NTP
+Last Sync: 15:41:00 (Success)
+[Sync Now]  [Manual Set]  [12/24h Toggle]
+```
+
+---
+
+### ⚡ 2. Electrical Calculator Suite
+
+**Purpose:** Quick calculations for electronics design and troubleshooting.
+
+**Included Calculators:**
+
+| Name                      | Formula                         | Description                                |
+| ------------------------- | ------------------------------- | ------------------------------------------ |
+| **Ohm’s Law**             | V = I × R                       | Compute voltage, current, or resistance.   |
+| **Power Law**             | P = V × I                       | Calculate electrical power.                |
+| **Voltage Divider**       | Vout = Vin × (R2 / (R1 + R2))   | For level shifting and bias circuits.      |
+| **RC Time Constant**      | τ = R × C                       | Charge/discharge timing analysis.          |
+| **Reactance (C/L)**       | Xc = 1/(2πfC), Xl = 2πfL        | Impedance components for AC circuits.      |
+| **Resistor Code Decoder** | Color bands ↔ Value ↔ Tolerance | Visual helper for resistor identification. |
+
+**Features:**
+
+* Live update as you type
+* SI prefix recognition (µ, m, k, M)
+* Auto E12/E24 rounding
+* Copy result to clipboard
+* Save as JSON preset
+
+**UI Example:**
+
+```
+Ohm’s Law
+[ V=____ ]  [ I=____ ]  [ R=____ ]
+[Calculate]   Result:  I = 12.5 mA
+```
+
+---
+
+### 🔢 3. Unit & Base Converter
+
+**Purpose:** Simplify unit conversions commonly used in electronics and computing.
+
+**Categories:**
+
+* Decimal ↔ Binary ↔ Hexadecimal
+* Frequency ↔ Period
+* dB ↔ Linear Power Ratio
+* Temperature (°C ↔ °F ↔ K)
+* Voltage (mV ↔ V ↔ kV)
+* Resistance / Capacitance / Inductance scaling
+
+**Example:**
+
+```
+Input: 10 kHz
+Output: 0.1 ms
+```
+
+**Extras:** copy results, auto unit prefix handling, and color-coded results for readability.
+
+---
+
+### 📚 4. Reference Guides (Educational)
+
+**Purpose:** Quick access to compact educational guides explaining protocols, components, and standards.
+
+**Sections:**
+
+| Guide                   | Summary                                                    |
+| ----------------------- | ---------------------------------------------------------- |
+| **UART**                | Frames, baud rates, voltage levels, parity, stop bits.     |
+| **I²C**                 | Addressing, pull-ups, start/stop sequence, timing diagram. |
+| **SPI**                 | Modes 0–3, CPOL/CPHA, clock polarity, daisy-chaining.      |
+| **BLE / Wi-Fi**         | Advertising, RSSI, channels, MAC addressing basics.        |
+| **IR Communication**    | NEC, RC5 format basics, safe TX limits.                    |
+| **PCB & Wiring Basics** | Ground loops, signal integrity, decoupling.                |
+
+**Display:** Scrollable pages with diagrams and minimal text (offline Markdown rendered to TFT).
+**Goal:** Help users understand what the console or scanner is showing.
+
+---
+
+### 🧾 5. Cheat-Sheets
+
+**Purpose:** On-device quick lookup tables and charts for everyday work.
+
+**Sheets include:**
+
+* **Resistor color code** chart
+* **Common baud rates** (9600–115200–921600)
+* **Logic voltage levels** (3.3 V ↔ 5 V safe ranges)
+* **Connector pinouts:** UART, I²C, SPI, USB, JST
+* **GPIO reference:** ESP32 pin capabilities (ADC/DAC/PWM)
+
+**Display:** Swipeable cards; tap to expand to full page.
+
+---
+
+### 🔊 6. Tone Generator
+
+**Purpose:** Quick audio or PWM signal generation for simple testing.
+
+**Outputs:**
+
+* DAC (GPIO25 or 26) → Sine tone
+* PWM (GPIO16 or similar) → Square tone
+
+**Features:**
+
+* Adjustable frequency (1 Hz – 10 kHz)
+* Adjustable duration and amplitude
+* Simple sweep mode
+* Use for buzzer, speaker, or input testing
+
+**UI Example:**
+
+```
+Freq: [1.0 kHz]   Amplitude: [0.5 Vpp]
+[PLAY] [STOP] [SWEEP ▾]
+```
+
+---
+
+### 💾 7. File Manager & Viewer
+
+**Purpose:** Browse and manage SD card data.
+
+**Features:**
+
+* Navigate directories (`/logs`, `/macros`, `/presets`)
+* View text/CSV/JSON files directly on-screen
+* Delete, rename, or export over BLE/Wi-Fi
+* File info: size, date modified, type icon
+
+**UI Example:**
+
+```
+/SDCARD
+ ├── ScanLogs/
+ │    ├── log_2025_11_05.csv
+ │    └── log_2025_11_04.csv
+ ├── Macros/
+ │    └── uart_bootseq.json
+ └── Presets/
+      └── sine_1khz.json
+```
+
+---
+
+### 🌐 8. Network Tools (Passive)
+
+**Purpose:** Non-invasive diagnostics and network awareness utilities.
+
+**Tools:**
+
+* Local IP info display (Wi-Fi connection details)
+* DNS lookup (hostname ↔ IP)
+* Ping test (safe, rate-limited)
+* Signal strength meter (RSSI)
+
+**Display:**
+
+```
+IP: 192.168.0.123
+SSID: HomeLab
+RSSI: -54 dBm
+DNS Lookup: google.com → 142.250.68.14
+[Ping Test] [Copy Info]
+```
+
+---
+
+### 🧠 9. Macro Templates
+
+**Purpose:** Provide ready-made script templates for automation.
+
+**Examples:**
+
+| Template                 | Description                           |
+| ------------------------ | ------------------------------------- |
+| **UART Bootloader Ping** | Send 0x55 every 100 ms; wait for ACK. |
+| **I²C Sensor Read**      | Read register 0x0F; print value.      |
+| **IR TV Toggle**         | Replay stored NEC pattern once.       |
+
+**Actions:**
+
+* “Load to Editor” → open in Scripting Engine
+* “Run Simulation” → dry-run to verify logic
+* “Save Copy” → modify and reuse
+
+---
+
+### 🎓 10. Tutorials & Help
+
+**Purpose:** Interactive, guided lessons and responsible-use reminders.
+
+**Tutorial Topics:**
+
+* “How to Scan Wi-Fi & BLE safely”
+* “Using UART Console without TX”
+* “Reading I²C Devices”
+* “Signal Generator Setup & Cautions”
+
+**Help Section:**
+
+* Explains Dev Mode safety
+* Regional RF regulations summary
+* UI/MT system architecture overview
+* License & open-source credits
+
+---
+
+## 🧩 How the Tab Works
+
+* Each utility runs as a **standalone app** within the “Other Functions” shell.
+* The bottom bar shows `[◀ Prev] [Home] [Next ▶]`.
+* Utilities can be launched via search or favorites.
+* Preferences (e.g., units, color mode, 12/24 h clock) saved in `/config/settings.json`.
+
+---
+
+## 🧠 Summary
+
+The **Other Functions** section turns the UI/MT from a tool into an *ecosystem*.
+It complements the main scanning and signal tools with everything an engineer, technician, or student might need on the go — calculators, conversions, education, and reference material — all wrapped in the same smooth, immersive interface.
 
 ---
 
