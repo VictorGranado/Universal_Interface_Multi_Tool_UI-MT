@@ -39,9 +39,118 @@ UI/MT acts as a **scanner, analyzer, configurator, and signal generator**, allow
 ---
 
 ##  Extended Utilities (Other Functions)
+
 ---
 
-##  10. Other Functions
+##  How the Tab Works
+
+* Each utility runs as a **standalone app** within the “Other Functions” shell.
+* The bottom bar shows `[◀ Prev] [Home] [Next ▶]`.
+* Utilities can be launched via search or favorites.
+* Preferences (e.g., units, color mode, 12/24 h clock) saved in `/config/settings.json`.
+
+---
+
+##  Summary
+
+The **Other Functions** section turns the UI/MT from a tool into an *ecosystem*.
+It complements the main scanning and signal tools with everything an engineer, technician, or student might need on the go — calculators, conversions, education, and reference material — all wrapped in the same smooth, immersive interface.
+
+---
+
+##  UI / UX Design Philosophy
+
+UI/MT’s interface merges **practicality** with **immersive design**.
+Every action feels intentional, animated, and responsive — like using a sci-fi in-game scanner, but for real engineering tasks.
+
+### Core UI Features
+
+* **Always-on status bar** → Battery, Wi-Fi, BLE, SD, DevMode, and Clock
+* **Mode carousel** → Swipe or encoder to switch between modes
+* **Quick-action HUD** → One-tap shortcuts for SCAN / EMULATE / CONNECT
+* **Radial command wheel** → Long-press center to jump between tools
+* **Context-sensitive menus** → Change dynamically by mode
+* **Simulation mode** → Visualize results without output for safe testing
+* **Theming system** → Dark neon palette with accent highlights
+
+### Visual & Audio Aesthetic
+
+| Element    | Style                                                           |
+| ---------- | --------------------------------------------------------------- |
+| Palette    | Dark base (#101018) + Neon accents (Cyan, Lime, Amber)          |
+| Font       | Orbitron / Audiowide (sci-fi HUD aesthetic)                     |
+| Animations | Smooth ease-in/out transitions, radar sweeps, waveform previews |
+| Sound      | Soft “ping” (confirm), “thud” (error), “sweep” (scan active)    |
+
+---
+
+##  Modes & Menus
+
+### 1. **Home HUD**
+
+Central radar-style interface showing device status and quick actions.
+
+* Radar sweep animation with signal blips
+* Buttons: `[SCAN] [EMULATE] [CONNECT]`
+* Long-press → Quick command wheel
+
+### 2. **Scanner**
+
+Displays Wi-Fi and BLE devices with real-time RSSI bars and channel histograms.
+
+* “Start/Stop” scan button
+* Export results to SD as CSV/JSON
+
+### 3. **Console**
+
+Multi-bus serial terminal for UART, I²C, and SPI.
+
+* Scrollable hex/text view
+* Baud/address/mode settings
+* Macros and injection tools
+* Color-coded TX/RX
+
+### 4. **Signal Emulator (Function Generator)**
+
+Full signal generation suite with waveform preview.
+
+* Waveforms: sine, square, triangle, saw, PWM, sweep
+* Outputs: DAC, PWM, or DDS (AD9833/AD9850)
+* Parameters: freq, amplitude, duration, attenuation
+* Presets & logging
+* Safety confirmation before TX
+
+### 5. **IR / RF Transmit (Dev Mode)**
+
+* Predefined & learned signals (IR NEC/RC5)
+* RF OOK/ASK templates (CC1101/SI4463)
+* Locked by default (TX disabled until user enables Dev Mode)
+
+### 6. **Scripting & Macros**
+
+* Create or run macros combining GPIO, UART, delays, reads, and writes
+* Run in simulation or active mode
+* Save as JSON for reuse
+
+### 7. **Diagnostics & Configurator**
+
+* Touch, SD, RTC, Wi-Fi/BLE self-tests
+* I²C bus scan
+* ADC test, LED blink, calibration, firmware info
+
+### 8. **Data / Storage Center**
+
+* Explore SD contents (logs, presets, macros)
+* View, export, delete
+
+### 9. **Security / Dev Mode**
+
+* Toggles for IR/RF TX, UART inject, I²C write
+* Safety & legal reminders before unlocking
+
+### 10. **Other Functions**
+
+* Utility and educational tools (calculators, guides, tutorials, etc.)
 
 *Utility and educational tools that complement the main engineering features — designed for convenience, quick reference, and learning.*
 
@@ -283,118 +392,6 @@ DNS Lookup: google.com → 142.250.68.14
 * Regional RF regulations summary
 * UI/MT system architecture overview
 * License & open-source credits
-
----
-
-##  How the Tab Works
-
-* Each utility runs as a **standalone app** within the “Other Functions” shell.
-* The bottom bar shows `[◀ Prev] [Home] [Next ▶]`.
-* Utilities can be launched via search or favorites.
-* Preferences (e.g., units, color mode, 12/24 h clock) saved in `/config/settings.json`.
-
----
-
-##  Summary
-
-The **Other Functions** section turns the UI/MT from a tool into an *ecosystem*.
-It complements the main scanning and signal tools with everything an engineer, technician, or student might need on the go — calculators, conversions, education, and reference material — all wrapped in the same smooth, immersive interface.
-
----
-
-##  UI / UX Design Philosophy
-
-UI/MT’s interface merges **practicality** with **immersive design**.
-Every action feels intentional, animated, and responsive — like using a sci-fi in-game scanner, but for real engineering tasks.
-
-### Core UI Features
-
-* **Always-on status bar** → Battery, Wi-Fi, BLE, SD, DevMode, and Clock
-* **Mode carousel** → Swipe or encoder to switch between modes
-* **Quick-action HUD** → One-tap shortcuts for SCAN / EMULATE / CONNECT
-* **Radial command wheel** → Long-press center to jump between tools
-* **Context-sensitive menus** → Change dynamically by mode
-* **Simulation mode** → Visualize results without output for safe testing
-* **Theming system** → Dark neon palette with accent highlights
-
-### Visual & Audio Aesthetic
-
-| Element    | Style                                                           |
-| ---------- | --------------------------------------------------------------- |
-| Palette    | Dark base (#101018) + Neon accents (Cyan, Lime, Amber)          |
-| Font       | Orbitron / Audiowide (sci-fi HUD aesthetic)                     |
-| Animations | Smooth ease-in/out transitions, radar sweeps, waveform previews |
-| Sound      | Soft “ping” (confirm), “thud” (error), “sweep” (scan active)    |
-
----
-
-##  Modes & Menus
-
-### 1. **Home HUD**
-
-Central radar-style interface showing device status and quick actions.
-
-* Radar sweep animation with signal blips
-* Buttons: `[SCAN] [EMULATE] [CONNECT]`
-* Long-press → Quick command wheel
-
-### 2. **Scanner**
-
-Displays Wi-Fi and BLE devices with real-time RSSI bars and channel histograms.
-
-* “Start/Stop” scan button
-* Export results to SD as CSV/JSON
-
-### 3. **Console**
-
-Multi-bus serial terminal for UART, I²C, and SPI.
-
-* Scrollable hex/text view
-* Baud/address/mode settings
-* Macros and injection tools
-* Color-coded TX/RX
-
-### 4. **Signal Emulator (Function Generator)**
-
-Full signal generation suite with waveform preview.
-
-* Waveforms: sine, square, triangle, saw, PWM, sweep
-* Outputs: DAC, PWM, or DDS (AD9833/AD9850)
-* Parameters: freq, amplitude, duration, attenuation
-* Presets & logging
-* Safety confirmation before TX
-
-### 5. **IR / RF Transmit (Dev Mode)**
-
-* Predefined & learned signals (IR NEC/RC5)
-* RF OOK/ASK templates (CC1101/SI4463)
-* Locked by default (TX disabled until user enables Dev Mode)
-
-### 6. **Scripting & Macros**
-
-* Create or run macros combining GPIO, UART, delays, reads, and writes
-* Run in simulation or active mode
-* Save as JSON for reuse
-
-### 7. **Diagnostics & Configurator**
-
-* Touch, SD, RTC, Wi-Fi/BLE self-tests
-* I²C bus scan
-* ADC test, LED blink, calibration, firmware info
-
-### 8. **Data / Storage Center**
-
-* Explore SD contents (logs, presets, macros)
-* View, export, delete
-
-### 9. **Security / Dev Mode**
-
-* Toggles for IR/RF TX, UART inject, I²C write
-* Safety & legal reminders before unlocking
-
-### 10. **Other Functions**
-
-* Utility and educational tools (calculators, guides, tutorials, etc.)
 
 ---
 
