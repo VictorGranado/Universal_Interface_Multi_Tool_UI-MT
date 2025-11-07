@@ -1,16 +1,10 @@
-Absolutely 🔥 Victor — this project deserves a flagship-level README.
-
-Here’s your **comprehensive, professional README draft** for **Universal Interface Multi-Tool (UI/MT)** — written in a way that you can drop straight into GitHub or a documentation site. It captures everything: the concept, core + extra features, UI/UX structure, engineering design, and real-world applications — in a tone that blends technical precision with the “sci-fi multi-tool” personality you envisioned.
-
----
-
-# 🛰️ Universal Interface Multi-Tool (UI/MT)
+Universal Interface Multi-Tool (UI/MT)
 
 *A handheld “sci-fi” diagnostic, communication, and signal-emulation device — designed for real engineering use.*
 
 ---
 
-## 🌐 Overview
+##  Overview
 
 **UI/MT (Universal Interface Multi-Tool)** is a multifunction handheld system built around the **ESP32-WROOM-DA** and a **320×240 TFT touch display**.
 It’s designed to feel like a **video-game gadget come to life** — a “hacking-style” interface that’s fun, immersive, and satisfying — but also fully functional, safe, and legally compliant for real engineering, prototyping, and educational use.
@@ -19,7 +13,7 @@ UI/MT acts as a **scanner, analyzer, configurator, and signal generator**, allow
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 * Create a **universal interface platform** that can communicate, scan, analyze, and command devices over multiple mediums (wired + wireless).
 * Provide a **functional engineering tool** that doubles as a **learning and exploration device**.
@@ -29,7 +23,7 @@ UI/MT acts as a **scanner, analyzer, configurator, and signal generator**, allow
 
 ---
 
-## ⚙️ Core Capabilities
+##  Core Capabilities
 
 | Category                                 | Description                                                                                              |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -44,10 +38,10 @@ UI/MT acts as a **scanner, analyzer, configurator, and signal generator**, allow
 
 ---
 
-## 💡 Extended Utilities (Other Functions)
+##  Extended Utilities (Other Functions)
 ---
 
-## 🔧 10. Other Functions
+##  10. Other Functions
 
 *Utility and educational tools that complement the main engineering features — designed for convenience, quick reference, and learning.*
 
@@ -61,7 +55,7 @@ Each utility launches in its own **touch-friendly tile interface**, with consist
 
 ---
 
-### 🕒 1. Real-Time Clock & Status
+###  1. Real-Time Clock & Status
 
 **Purpose:** Provide accurate timekeeping and synchronization for logs, timestamps, and user convenience.
 
@@ -85,7 +79,7 @@ Last Sync: 15:41:00 (Success)
 
 ---
 
-### ⚡ 2. Electrical Calculator Suite
+###  2. Electrical Calculator Suite
 
 **Purpose:** Quick calculations for electronics design and troubleshooting.
 
@@ -118,7 +112,7 @@ Ohm’s Law
 
 ---
 
-### 🔢 3. Unit & Base Converter
+###  3. Unit & Base Converter
 
 **Purpose:** Simplify unit conversions commonly used in electronics and computing.
 
@@ -142,7 +136,7 @@ Output: 0.1 ms
 
 ---
 
-### 📚 4. Reference Guides (Educational)
+###  4. Reference Guides (Educational)
 
 **Purpose:** Quick access to compact educational guides explaining protocols, components, and standards.
 
@@ -162,7 +156,7 @@ Output: 0.1 ms
 
 ---
 
-### 🧾 5. Cheat-Sheets
+###  5. Cheat-Sheets
 
 **Purpose:** On-device quick lookup tables and charts for everyday work.
 
@@ -178,7 +172,7 @@ Output: 0.1 ms
 
 ---
 
-### 🔊 6. Tone Generator
+###  6. Tone Generator
 
 **Purpose:** Quick audio or PWM signal generation for simple testing.
 
@@ -203,7 +197,7 @@ Freq: [1.0 kHz]   Amplitude: [0.5 Vpp]
 
 ---
 
-### 💾 7. File Manager & Viewer
+###  7. File Manager & Viewer
 
 **Purpose:** Browse and manage SD card data.
 
@@ -229,7 +223,7 @@ Freq: [1.0 kHz]   Amplitude: [0.5 Vpp]
 
 ---
 
-### 🌐 8. Network Tools (Passive)
+###  8. Network Tools (Passive)
 
 **Purpose:** Non-invasive diagnostics and network awareness utilities.
 
@@ -252,7 +246,7 @@ DNS Lookup: google.com → 142.250.68.14
 
 ---
 
-### 🧠 9. Macro Templates
+###  9. Macro Templates
 
 **Purpose:** Provide ready-made script templates for automation.
 
@@ -272,7 +266,7 @@ DNS Lookup: google.com → 142.250.68.14
 
 ---
 
-### 🎓 10. Tutorials & Help
+###  10. Tutorials & Help
 
 **Purpose:** Interactive, guided lessons and responsible-use reminders.
 
@@ -292,7 +286,7 @@ DNS Lookup: google.com → 142.250.68.14
 
 ---
 
-## 🧩 How the Tab Works
+##  How the Tab Works
 
 * Each utility runs as a **standalone app** within the “Other Functions” shell.
 * The bottom bar shows `[◀ Prev] [Home] [Next ▶]`.
@@ -301,14 +295,14 @@ DNS Lookup: google.com → 142.250.68.14
 
 ---
 
-## 🧠 Summary
+##  Summary
 
 The **Other Functions** section turns the UI/MT from a tool into an *ecosystem*.
 It complements the main scanning and signal tools with everything an engineer, technician, or student might need on the go — calculators, conversions, education, and reference material — all wrapped in the same smooth, immersive interface.
 
 ---
 
-## 🎨 UI / UX Design Philosophy
+##  UI / UX Design Philosophy
 
 UI/MT’s interface merges **practicality** with **immersive design**.
 Every action feels intentional, animated, and responsive — like using a sci-fi in-game scanner, but for real engineering tasks.
@@ -334,7 +328,7 @@ Every action feels intentional, animated, and responsive — like using a sci-fi
 
 ---
 
-## 🧭 Modes & Menus
+##  Modes & Menus
 
 ### 1. **Home HUD**
 
@@ -404,7 +398,7 @@ Full signal generation suite with waveform preview.
 
 ---
 
-## 🧱 Hardware Architecture
+##  Hardware Architecture
 
 | Component                               | Function                                         |
 | --------------------------------------- | ------------------------------------------------ |
@@ -420,7 +414,7 @@ Full signal generation suite with waveform preview.
 
 ---
 
-## 🧩 Software Architecture
+##  Software Architecture
 
 **Core modules**
 
@@ -438,7 +432,7 @@ Full signal generation suite with waveform preview.
 
 ---
 
-## ⚖️ Safety & Legal Compliance
+##  Safety & Legal Compliance
 
 UI/MT is designed to **educate, analyze, and test safely** — not to interfere with real systems.
 All transmission-capable features (IR/RF/UART inject) are **locked behind Dev Mode** and require explicit user consent.
@@ -447,7 +441,7 @@ The project encourages **ethical, responsible, and lawful experimentation** in a
 
 ---
 
-## 🧰 Typical Use Cases
+##  Typical Use Cases
 
 | Use Case                     | Description                                                    |
 | ---------------------------- | -------------------------------------------------------------- |
@@ -460,7 +454,7 @@ The project encourages **ethical, responsible, and lawful experimentation** in a
 
 ---
 
-## 🧠 Why It’s Relevant
+##  Why It’s Relevant
 
 * Combines multiple bench instruments (multimeter, function generator, logic analyzer, serial terminal) into one compact handheld platform.
 * Provides **visual, interactive feedback** for learners and professionals.
@@ -469,20 +463,20 @@ The project encourages **ethical, responsible, and lawful experimentation** in a
 
 ---
 
-## 📦 Project Status
+##  Project Status
 
 | Stage                        | Progress                           |
 | ---------------------------- | ---------------------------------- |
-| Hardware design              | ✅ TFT + touch + SD + RTC confirmed |
-| UI mock / UX test            | ✅ functional (ESP32 + ILI9341)     |
-| Core architecture            | 🔧 in development                  |
-| Function generator (DAC/DDS) | 🧩 planned next                    |
-| IR / RF TX integration       | 🔒 dev-mode stage                  |
-| Full scripting engine        | 🧠 future milestone                |
+| Hardware design              |  TFT + touch + SD + RTC confirmed |
+| UI mock / UX test            |  functional (ESP32 + ILI9341)     |
+| Core architecture            |  in development                  |
+| Function generator (DAC/DDS) |  planned next                    |
+| IR / RF TX integration       |  dev-mode stage                  |
+| Full scripting engine        |  future milestone                |
 
 ---
 
-## 🧾 License & Attribution
+##  License & Attribution
 
 Open hardware / open software project under **MIT License**.
 Created by **Victor Granado** — Computer Engineering, BYU-Idaho.
@@ -490,6 +484,6 @@ Inspiration drawn from *Flipper Zero*, *multimeters*, and *sci-fi interface desi
 
 ---
 
-## 🧭 Project Vision
+##  Project Vision
 
 > *“The UI/MT blurs the line between engineering instrument and game interface — making discovery, diagnostics, and electronics feel alive.”*
