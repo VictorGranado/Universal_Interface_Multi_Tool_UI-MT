@@ -164,7 +164,7 @@ Each utility launches in its own **touch-friendly tile interface**, with consist
 
 ---
 
-###  1. Real-Time Clock & Status
+####  1. Real-Time Clock & Status
 
 **Purpose:** Provide accurate timekeeping and synchronization for logs, timestamps, and user convenience.
 
@@ -188,7 +188,7 @@ Last Sync: 15:41:00 (Success)
 
 ---
 
-###  2. Electrical Calculator Suite
+####  2. Electrical Calculator Suite
 
 **Purpose:** Quick calculations for electronics design and troubleshooting.
 
@@ -221,7 +221,7 @@ Ohm’s Law
 
 ---
 
-###  3. Unit & Base Converter
+####  3. Unit & Base Converter
 
 **Purpose:** Simplify unit conversions commonly used in electronics and computing.
 
@@ -245,7 +245,7 @@ Output: 0.1 ms
 
 ---
 
-###  4. Reference Guides (Educational)
+####  4. Reference Guides (Educational)
 
 **Purpose:** Quick access to compact educational guides explaining protocols, components, and standards.
 
@@ -265,7 +265,7 @@ Output: 0.1 ms
 
 ---
 
-###  5. Cheat-Sheets
+####  5. Cheat-Sheets
 
 **Purpose:** On-device quick lookup tables and charts for everyday work.
 
@@ -281,7 +281,7 @@ Output: 0.1 ms
 
 ---
 
-###  6. Tone Generator
+####  6. Tone Generator
 
 **Purpose:** Quick audio or PWM signal generation for simple testing.
 
@@ -306,7 +306,7 @@ Freq: [1.0 kHz]   Amplitude: [0.5 Vpp]
 
 ---
 
-###  7. File Manager & Viewer
+####  7. File Manager & Viewer
 
 **Purpose:** Browse and manage SD card data.
 
@@ -332,7 +332,7 @@ Freq: [1.0 kHz]   Amplitude: [0.5 Vpp]
 
 ---
 
-###  8. Network Tools (Passive)
+####  8. Network Tools (Passive)
 
 **Purpose:** Non-invasive diagnostics and network awareness utilities.
 
@@ -355,7 +355,7 @@ DNS Lookup: google.com → 142.250.68.14
 
 ---
 
-###  9. Macro Templates
+####  9. Macro Templates
 
 **Purpose:** Provide ready-made script templates for automation.
 
@@ -375,7 +375,7 @@ DNS Lookup: google.com → 142.250.68.14
 
 ---
 
-###  10. Tutorials & Help
+####  10. Tutorials & Help
 
 **Purpose:** Interactive, guided lessons and responsible-use reminders.
 
