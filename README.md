@@ -477,6 +477,6 @@ The project encourages **ethical, responsible, and lawful experimentation** in a
 ##  License & Attribution
 
 Open hardware / open software project under **MIT License**.
-Created by **Victor Granado** — Computer Engineering, BYU-Idaho.
+Created by **Victor Granado** — Computer Engineering
 
 ---
