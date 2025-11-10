@@ -1,6 +1,6 @@
 Universal Interface Multi-Tool (UI/MT)
 
-*A handheld “sci-fi” diagnostic, communication, and signal-emulation device — designed for real engineering use.*
+*A handheld “sci-fi” diagnostic, communication, and signal-emulation device designed for real engineering use.*
 
 ---
 
