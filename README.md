@@ -477,10 +477,5 @@ The project encourages **ethical, responsible, and lawful experimentation** in a
 
 Open hardware / open software project under **MIT License**.
 Created by **Victor Granado** — Computer Engineering, BYU-Idaho.
-Inspiration drawn from *Flipper Zero*, *multimeters*, and *sci-fi interface design.*
 
 ---
-
-##  Project Vision
-
-> *“The UI/MT blurs the line between engineering instrument and game interface — making discovery, diagnostics, and electronics feel alive.”*
