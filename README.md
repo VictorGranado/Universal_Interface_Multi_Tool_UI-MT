@@ -137,6 +137,7 @@ Full signal generation suite with waveform preview.
 * Touch, SD, RTC, Wi-Fi/BLE self-tests
 * I²C bus scan
 * ADC test, LED blink, calibration, firmware info
+* Add network ethernet connection and interfacing
 
 ### 8. **Data / Storage Center**
 
