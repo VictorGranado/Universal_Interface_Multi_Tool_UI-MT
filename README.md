@@ -38,6 +38,9 @@ UI/MT acts as a **scanner, analyzer, configurator, and signal generator**, allow
 
 ---
 
+##  Extended Utilities (Other Functions)
+
+---
 ##  How the Tab Works
 
 * Each utility runs as a **standalone app** within the “Other Functions” shell.
